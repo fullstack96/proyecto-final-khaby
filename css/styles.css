@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Skranji', cursive;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(38, 27, 60);
+  }
+  
+  h1,
+  p {
+    color: white;
+  }
+  /* Nav-bar */
+  .navBar-general{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    top: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
+  .navbar-desktop{
+    display: none;
+  }
+  .uno_logo {
+    width: 160px;
+  }
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .nav_bar ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: 0.2s;
+    margin: 0 5px;
+    margin-bottom: 20px;
+  }
+  
+  .nav_bar ul li a:hover {
+    color: #212127;
+    background-color: orange;
+  }
+  
+  .nav_bar ul li a.active {
+    color: #212127;
+    background-color: orange;
+  }
+  
+  .bars {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .bars .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+  }
+  
+  .nav_bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: rgb(57, 27, 60);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  
+  .nav_bar.active {
+    height: 450px;
+  }
+  
+  .nav_bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  
+  .nav_bar.active ul {
+    opacity: 1;
+  }
+  .img-language{
+    text-decoration: none;
+    margin: 5px 15px;
+  }
+  .img-language img{
+    border-radius: 50%;
+    width: 50px;
+    padding: 5px;
+    transition: all 0.5s;
+  }
+  .img-language img:hover{
+    background-color: #ffe00e;
+  }
+  .scrolled{
+    background-color: rgb(57, 27, 60);
+    box-shadow:0px 15px 40px rgba(0,0,0,0.1);
+  }
+  /* HOME */
+  .home {
+    padding: 50px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px 100px 0px;
+    box-sizing:border-box;
+  }
+  
+  .boton-khaby-first {
+    border: 3px solid orange;
+    width: 80%;
+    max-width: 350px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 100px 10px 70px 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .title-boton-khaby-first {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .title-token-number {
+    margin: 0;
+    font-weight: 500;
+    color: orange;
+  }
+  
+  .container-token-title-number {
+    width: 100%;
+    max-width: 440px;
+    border: yellow dashed 2px;
+    border-radius: 25px;
+    margin: 10px 0px;
+    padding: 10px 3px;
+    box-sizing: border-box;
+  }
+  
+  .number-token {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    margin: 0;
+  }
+  
+  /* ABOUT */
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-about{
+    font-weight: 500;
+    color:orange;
+    margin: 0;
+    padding: 5px;
+  }
+  .container-about-img-text{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .container-about-img-text img{
+    width: 80%;
+    max-width: 250px;
+    margin: 20px 0px;
+  }
+  .text-about{
+    font-family: 'italic';
+    font-weight: 500;
+    margin: auto;
+  }
+  /* TOKENOMIC */
+  .tokenomika{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 80px 10px 10px 10px;
+  }
+  .img-khaby-fornite{
+    width: 80%;
+    max-width: 260px;
+    margin: 10px 0px;
+  }
+  .container-circle-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    max-width: 440px;
+    box-sizing: border-box;
+  }
+  .container-title-text-grafic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-circle{
+    width: 70%;
+  }
+  .title-top{
+    font-size: 9px;
+    position: absolute;
+    top: 2%;
+    left:20%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .title-top span{
+    position:absolute;
+    top:10px;
+    left: 40px;
+    padding: 5px;
+  }
+  .title-left{
+    font-size: 9px;
+    bottom: 40%;
+    left: 1%;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .title-left span{
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+  }
+  .title-right{
+    position: absolute;
+    font-size: 9px;
+    right: 2%;
+    bottom: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .title-right span{
+    position: absolute;
+    bottom: -15px;
+    right: 30px;
+  }
+  
+  .title-tokenomic{
+    text-align: center;
+    font-weight: 500;
+    color: orange;
+  }
+  .text-tokenomic{
+    width: 80%;
+    max-width: 460px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container-grafic-text{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 440px;
+    box-sizing: border-box;
+  }
+  .img-grafic{
+    width: 75%;
+    margin: 10px 0px;
+  }
+  .title-grafic-first{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'italic';
+    top: 15%;
+    left: 0%;
+  }
+  .title-grafic-second{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'italic';
+    top: 45%;
+    left: 0%;
+  }
+  .title-grafic-three{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'italic';
+    bottom: 15%;
+    left: 0%;
+  }
+  /* ROUMAP */
+  .roumap{
+    /* border: 1px solid salmon; */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 90px 0 0 0;
+  }
+  .title-roumap{
+    color: orange;
+    text-align: center;
+  }
+  .container-three-fase{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-sizing: content-box;
+  }
+  .box-fase-one-two-three{
+    width: 90%;
+    max-width: 280px;
+    border: 5px solid whitesmoke;
+    height: 450px;
+    border-radius: 25px;
+    margin: 20px 5px;
+  }
+  .first-back{
+    background-image: linear-gradient(to right, rgb(54, 149, 245),rgb(15, 76, 137) ) ;
+  }
+  .second-back{
+    background-image: linear-gradient(to right, #e3a112, #fa7900) ;
+  }
+  .three-back{
+    background-image: linear-gradient(to right, rgb(3, 146, 91),rgb(20, 22, 20));
+  }
+  .box-img-title-fase{
+    border-bottom: dashed 2px white;
+    padding: 0 10px;
+  }
+  .box-img-khaby-fase{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
+  .box-img-khaby-fase img {
+    width: 20%;
+  }
+  .container-text-description{
+    padding: 10px;
+    margin-bottom: 70px;
+  }
+  .title-fase{
+    font-size: 30px;
+  }
+  .second-title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  .container-text-description p {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  /* SHOP-TOKEN */
+  .shop-token{
+    margin-bottom: 40px;
+    margin-top: 60px;
+    padding: 90px 0 0 0;
+  }
+  .title-shop{
+    color: orange;
+    text-align: center;
+  }
+  .container-shop-box{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box-shop-one-two-three{
+    width: 80%;
+    height: 450px;
+    max-width: 310px;
+    border: 5px solid rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 5px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-sizing:border-box;
+  }
+  .box-shop-one-two-three img {
+    width: 20%;
+  }
+  .box-shop-one-two-three h1{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 10px 25px 10px;
+  }
+  .box-shop-one-two-three p{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  .back-first{
+    background-image: linear-gradient(to right, rgb(54, 149, 245),rgb(15, 76, 137) ) ;
+  }
+  .back-second{
+    background-image: linear-gradient(to right, #e3a112, #fa7900) ;
+  }
+  .back-three{
+    background-image: linear-gradient(to right, rgb(3, 146, 91),rgb(20, 22, 20));
+  }
+  
+  /* KING-KHABY*/
+  .king-khaby{
+    margin-bottom: 30px;
+    padding: 90px 0 0 0;
+  }
+  .trono_khaby {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .title-king{
+    color: orange;
+    text-align: center;
+    margin: 0;
+  }
+  .container-king-divs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-king-divs img{
+    width: 95%;
+    max-width: 370px;
+  }
+  .container-three-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .color-div{
+    max-width: 350px;
+    border: 5px solid rgb(189, 189, 189);
+    border-radius: 60px;
+    margin: 20px 0px;
+  }
+  .color-div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  
+  /* CONTACT */
+  .contact{
+    padding: 50px 10px 30px 10px;
+  }
+  .box-title-number-email{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .first-title-contact-box{
+    color: orange;
+    text-align: center;
+    margin: 0;
+  }
+  .number-text{
+    color: rgb(168, 43, 226);
+    margin: 0;
+  }
+  .box-icon{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 1px solid white;
+  }
+  .box-icon i {
+    color: #5a5a5a;
+    font-size: 20px;
+  }
+  /* Footer */
+  footer{
+    width: 100%;
+    padding: 40px 10px;
+    background-color: rgb(13, 4, 36);
+  }
+  .title-footer{
+    color: white;
+    margin: 0;
+    font-size: 18px;
+  }
+  @media(min-width:560px){
+    /* HOME */
+    .home{
+      height: 400px;
+      margin: 70px 0px 100px 0px;
+    }
+    .container-token-title-number{
+      padding: 15px 3px;
+    }
+    .number-token{
+      font-size: 15px;
+    }
+    /* ABOUT */
+    .text-about{
+      font-size: 18px;
+      width: 80%;
+    }
+    /* CONTACT */
+    .box-icon{
+      max-width: 460px;
+    }
+    .box-icon i {
+      font-size: 25px;
+    }
+    .trono_khaby {
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+  }
+  @media(min-width:750px){
+    .home {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    /* King khaby */
+    .container-king-divs{
+      flex-direction: row;
+      justify-content: center;
+    }
+    .container-king-divs img{
+      max-width: 400px;
+    }
+    .container-three-color{
+      width: 40%;
+    }
+    /* CONTACT */
+    .box-icon i {
+      font-size: 30px;
+    }
+    .img-khaby-fornite{
+      margin-bottom: 30px;
+    }
+    .trono_khaby {
+      margin-right: 20px;
+    }
+  }
+  @media(min-width:900px){
+    /* Navbar */
+    .nav_bar, .bars{
+      display: none;
+    }
+    .navBar-general{
+      height: 100px;
+      justify-content: space-between;
+      background-color: rgb(57, 27, 60);
+    }
+    .navbar-desktop{
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      
+    }
+    .list-desktop-navbar{
+      width: 60%;
+      display: flex;
+      color: #ffffff;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      
+    }
+    .list-desktop-navbar  li a:hover {
+      font-size: 20px;
+      margin: 5px;
+      text-decoration: none;
+      color: #212127;
+      background-color: orange;
+      border-radius: 15px;
+      padding: 10px 25px;
+      
+      transition: 0.7s;
+      margin: 0 5px;
+      margin-bottom: 20px;
+    }
+  
+
+
+    
+    .boton-khaby-second {
+      border: 3px solid orange;
+      width: 40%;
+      max-width: 350px;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      justify-content: center;
+      margin: 10px;
+      padding: 20px 25px;
+      box-sizing: border-box;
+    }
+    .boton-khaby-second a{
+      text-decoration: none;
+    }
+    .img-language{
+      margin: 0px;
+    }
+    /*Home*/
+    .home{
+        margin-top: 90px;
+        margin-bottom: -100px;
+      
+    }
+    .title-token-number{
+      font-size: 50px;
+      margin: 30px 0px;
+    }
+    .boton-khaby-first{
+      display: none;
+    }
+    .container-token-title-number{
+      width: 90%;
+      max-width: 700px;
+    }
+    .number-token{
+      font-size: 21px;
+    }
+    /* ABOUT */
+    .title-about{
+      font-size: 40px;
+    }
+    .text-about{
+      font-size: 25px;
+      margin-top: 30px;
+    }
+  
+    /* TOKENOMIC */
+    .tokenomika{
+      position: relative;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 110px 10px 10px 10px;
+      max-width: 1200px;
+      margin: 50px auto;
+      box-sizing: border-box;
+    }
+    .img-khaby-fornite{
+      width: 100%;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 13%;
+      left: 10%;
+    }
+    .img-circle{
+      margin: 5px;
+    }
+    .container-circle-text{
+      align-self: flex-end;
+      padding: 30px 20px 0px 20px;
+      max-width: 400px;
+    }
+    .title-top, .title-left, .title-right{
+      font-size: 12px;
+    }
+    .title-right{
+      right: -5%;
+    }
+    .title-tokenomic{
+      font-size: 50px;
+    }
+    .text-tokenomic{
+      margin: 30px 0px;
+      width: 80%;
+      font-size: 20px;
+      max-width: 460px;
+      text-align: center;
+    }
+    .container-grafic-text{
+      max-width: 400px;
+    }
+    .title-grafic-first, .title-grafic-second, .title-grafic-three{
+      font-size: 14px;
+    }
+    .img-grafic{
+      width: 70%;
+    }
+    /* ROUMAP*/
+    .roumap{
+      padding: 130px 0 0 0;
+    }
+    /* SHOP-TOKEN*/
+    .shop-token{
+      padding: 110px 0 0 0;
+    }
+    /*Contact*/
+    .first-title-contact-box{
+      font-size: 40px;
+    }
+  }
+  @media(min-width:1200px){
+    /* Navbar */
+    .navbar-desktop{
+      justify-content: space-around;
+    }
+    .img-language{
+      margin: 5px;
+    }
+    /* TOKENOMIKA */
+    .img-khaby-fornite{
+     margin: -5px 35px;
+    }
+    .home {
+      margin-top: -100px;
+      margin-bottom: -100px;
+    }
+  }
