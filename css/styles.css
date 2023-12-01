@@ -228,6 +228,19 @@
   .img-circle{
     width: 70%;
   }
+  .suministro_khaby {
+    font-size: 12px;
+    position: absolute;
+    top: 43%;
+    left:40%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .suministro_khaby span{
+    position:absolute;
+    top:20px;
+    left: -1px;
+    padding: 5px;
+  }
   .title-top{
     font-size: 9px;
     position: absolute;
@@ -532,6 +545,23 @@
     .number-token{
       font-size: 15px;
     }
+    .suministro_khaby {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 15px;
+      position: absolute;
+      top: 140px;
+      left:170px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .suministro_khaby span{
+      display: flex;
+      flex-wrap: wrap;
+      position:absolute;
+      top:30px;
+      left: -2px;
+      padding: 5px;
+    }
     /* ABOUT */
     .text-about{
       font-size: 18px;
@@ -553,6 +583,23 @@
     .home {
       margin-top: 30px;
       margin-bottom: 50px;
+    }
+    .suministro_khaby {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 15px;
+      position: absolute;
+      top: 140px;
+      left:170px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .suministro_khaby span{
+      display: flex;
+      flex-wrap: wrap;
+      position:absolute;
+      top:30px;
+      left: 0px;
+      padding: 5px;
     }
     /* King khaby */
     .container-king-divs{
@@ -688,6 +735,23 @@
     }
     .img-circle{
       margin: 5px;
+    }
+    .suministro_khaby {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 15px;
+      position: absolute;
+      top: 130px;
+      left:150px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .suministro_khaby span{
+      display: flex;
+      flex-wrap: wrap;
+      position:absolute;
+      top:25px;
+      left: 0px;
+      padding: 5px;
     }
     .container-circle-text{
       align-self: flex-end;
