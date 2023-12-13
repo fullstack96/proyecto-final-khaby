@@ -182,16 +182,24 @@
   }
 
   .countdown {
+    border: 1px solid salmon;
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-around;
+    width: 100%;
     flex-wrap: wrap;
+    box-sizing: border-box;
   }
 
   .countdown div {
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: orange;
     display: flex;
-    place-items: center;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    box-sizing: border-box;
   }
 
   .container_h {
@@ -202,24 +210,20 @@
   }
 
   .contador {
-    display: grid;
-    place-items: center;
-    border: solid 1px #fff;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    display: flex;
     color: #fff;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: bold;
-    background-color: #ff748c;
+    margin: 0;
+    padding-right: 3px;
   }
 
   .contador_dos {
     display: block;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     color: #74ffe7;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 400; 
   }
 
@@ -648,6 +652,16 @@
     .trono_khaby {
       margin-top: 60px;
       margin-bottom: 30px;
+    }
+    /* countDown */
+    .countdown{
+      max-width: 1000px;
+      border: red solid 1px;
+      flex-direction: row; 
+    }
+    .countdown div{
+      flex-direction: row;
+      width: 20%;
     }
   }
   @media(min-width:750px){
