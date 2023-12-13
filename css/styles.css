@@ -15,6 +15,9 @@
   p {
     color: white;
   }
+  a {
+    text-decoration: none;
+  }
   /* Nav-bar */
   .navBar-general{
     position: fixed;
@@ -166,7 +169,7 @@
     box-sizing: border-box;
     text-align: center;
     width: 100%;
-    font-size: 10px;
+    font-size: 11px;
     margin: 0;
   }
   
@@ -175,14 +178,15 @@
     width: 100%;
     height: 400px;
     display: flex;
+    margin-top: -160px;
+    margin-bottom: 70px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #333;
+    
   }
 
   .countdown {
-    border: 1px solid salmon;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -193,7 +197,8 @@
   .countdown div {
     margin: 5px 0;
     padding: 5px 0;
-    background-color: orange;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #e3a112, #fa7900) ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,7 +209,7 @@
 
   .container_h {
     text-align: center;
-    color: #fff;
+    color: orange;
     font-size: 40px;
     padding: 30px 10px;
   }
@@ -222,7 +227,7 @@
     display: block;
     padding: 0px;
     text-align: center;
-    color: #74ffe7;
+    color:#fff;
     font-size: 18px;
     font-weight: 400; 
   }
@@ -245,6 +250,36 @@
     font-size: 100px;
     color: #fff;
   }
+  .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .descripcion_contenedor{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .descripcion_contenedor div {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(54, 149, 245),rgb(15, 76, 137) ) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    box-sizing: border-box;
+  }
+
   /* ABOUT */
   .about {
     display: flex;
@@ -604,9 +639,14 @@
     background-color: rgb(13, 4, 36);
   }
   .title-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     color: white;
     margin: 0;
     font-size: 18px;
+    margin-bottom: 40px;
   }
   @media(min-width:560px){
     /* HOME */
@@ -653,16 +693,21 @@
       margin-top: 60px;
       margin-bottom: 30px;
     }
+    /*container*/
+    .container{
+      margin-top: -170px;
+      margin-bottom: 40px;
+    }
     /* countDown */
     .countdown{
       max-width: 1000px;
-      border: red solid 1px;
       flex-direction: row; 
     }
     .countdown div{
       flex-direction: row;
       width: 20%;
     }
+    
   }
   @media(min-width:750px){
     .home {
