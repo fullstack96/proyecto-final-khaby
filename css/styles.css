@@ -176,10 +176,10 @@
   /*Cuenta regresiva*/
   .container {
     width: 100%;
-    height: 400px;
+    height: 730px;
     display: flex;
-    margin-top: -160px;
-    margin-bottom: 70px;
+    margin-top: -150px;
+    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -197,13 +197,15 @@
   .countdown div {
     margin: 5px 0;
     padding: 5px 0;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, #e3a112, #fa7900) ;
+    border-radius: 50%;
+    height: 200px;
+    border: 2px solid orange;
+    /* background-image: linear-gradient(to right, #e3a112, #fa7900) ; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 42%;
     box-sizing: border-box;
   }
 
@@ -217,8 +219,8 @@
   .contador {
     display: flex;
     color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 40px;
+    /* font-weight: bold; */
     margin: 0;
     padding-right: 3px;
   }
@@ -229,7 +231,7 @@
     text-align: center;
     color:#fff;
     font-size: 18px;
-    font-weight: 400; 
+    /* font-weight: 400; */ 
   }
 
   .final-sms {
@@ -701,10 +703,9 @@
     /* countDown */
     .countdown{
       max-width: 1000px;
-      flex-direction: row; 
     }
     .countdown div{
-      flex-direction: row;
+      display: flex;
       width: 20%;
     }
     
